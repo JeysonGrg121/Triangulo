@@ -20,12 +20,12 @@ import javax.swing.border.LineBorder;
 
 public class PanelImagen extends JPanel{
     private JLabel etiquetaImagen;
-   
+ 
 
 //Se crea el contructo de la imagen
     public PanelImagen( )
     {
-        FlowLayout layout = new FlowLayout( );// ubicacion de componenetes en forma horizontal
+        FlowLayout layout = new FlowLayout( FlowLayout.LEFT);// ubicacion de componenetes en forma horizontal
         layout.setHgap( 0 );// posicion 0
         layout.setVgap( 0 );//posiion 0
         setLayout( layout );//
@@ -34,8 +34,9 @@ public class PanelImagen extends JPanel{
         ImageIcon icono = new ImageIcon( "imagenes/logo.JPG" );
         //
         //La agrega a la etiqueta
-        etiquetaImagen = new JLabel( "Jeyson Duarte " );
+        etiquetaImagen = new JLabel( " Jeyson Duarte" );
         etiquetaImagen.setIcon( icono );
+   
        
         add(  etiquetaImagen );
         //
